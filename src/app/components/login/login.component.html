@@ -1,33 +1,57 @@
 <div
-  class="bg-gradient-to-b from-blue to-green min-h-screen grid grid-cols-2 text-white font-Montserrat"
+  class="bg-gradient-to-b from-blue to-green grid tablet:grid-cols-2 grid-cols-1 min-h-svh text-white font-Montserrat content-center relative"
 >
-  <div class="p-5">
-    <div class="p-10">
-      <h1 class="text text-9xl font-extrabold">GC-FAMS</h1>
-      <p class="text- text-3xl">Faculty Assessment and Monitoring System</p>
+  <div class="flex flex-col items-center z-10 gap-10">
+    <div>
+      <h1
+        class="text-4xl tablet:text-5xl laptop:text-7xl laptopL:text-8xl font-extrabold"
+      >
+        GC-FAMS
+      </h1>
+      <p class="text-xl tablet:text-base laptop:text-xl laptopL:text-2xl">
+        Faculty Assessment and Monitoring System
+      </p>
     </div>
     <img
       src="../../../assets/img/Logo_mockup 1.png"
       alt="GCFAMS Logo"
-      class="aspect-square w-8/12 max-w-screen-md"
+      class="aspect-square w-7/12 max-w-screen-sm min-w-72"
     />
   </div>
-  <div>
-    <div class="bg-blue p-5 rounded-lg">
-      <p class="p-10 text-center">Welcome</p>
+  <div class="flex items-center z-10">
+    <div
+      class="bg-blue p-5 rounded-2xl tablet:w-10/12 laptop:w-8/12 max-w-screen-md"
+    >
+      <p class="p-5 text-center text-2xl font-semibold">Welcome</p>
+      <div class="relative inline-block w-10 mr-2 align-middle select-none">
+        <!-- Input element -->
+        <input
+          type="checkbox"
+          id="toggle"
+          name="toggle"
+          class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+        />
+        <!-- Label for the toggle switch -->
+        <label
+          for="toggle"
+          class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+        ></label>
+      </div>
+      <!-- Optional label for the toggle switch -->
+      <span class="text-gray-700">Toggle</span>
       <form
         action=""
-        class="flex flex-col justify-center items-center bg-white2 p-7 rounded-lg gap-2"
+        class="flex flex-col justify-center items-center bg-white2 p-7 rounded-lg gap-5"
       >
         <input
           type="text"
           placeholder="Username"
-          class="px-5 py-2 rounded-sm text-blue"
+          class="px-5 py-2 rounded-sm text-blue w-full shadow-lg"
         />
         <input
           type="password"
           placeholder="Password"
-          class="px-5 py-2 rounded-sm text-blue"
+          class="px-5 py-2 rounded-sm text-blue w-full shadow-lg"
         />
         <a href="" class="text-end text-blue">Forgot Password?</a>
         <input
@@ -38,4 +62,17 @@
       </form>
     </div>
   </div>
+  <svg
+    viewBox="0 0 1920 680"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="absolute bottom-0 z-1 min-w-screen w-screen h-screen/2"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M-74.8601 60.6017C269.017 -137.637 564.29 212.252 918.029 272.263C1288.3 335.079 1826.7 104.576 1987.98 410.558C2151.92 721.568 1813.1 1139.38 1542.78 1457.51C1327.08 1711.38 1016.99 1816.85 702.97 1922.93C317.18 2053.25 -131.551 2322.52 -415.887 2119.16C-705.003 1912.39 -541.151 1452.9 -478.98 1077.61C-418.726 713.896 -428.329 264.37 -74.8601 60.6017Z"
+      fill="white"
+    />
+  </svg>
 </div>

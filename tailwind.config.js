@@ -12,18 +12,13 @@ module.exports = {
         Montserrat: ["Montserrat"],
       },
       screens: {
-        smallphone: "320px",
-
+        mobileS: "320px",
+        mobileM: "375px",
+        mobileL: "420px",
         tablet: "768px",
-        // => @media (min-width: 640px) { ... }
-
         laptop: "1024px",
-
-        laptopL: "1440px",
-        // => @media (min-width: 1024px) { ... }
-
         desktop: "1280px",
-        // => @media (min-width: 1280px) { ... }
+        laptopL: "1440px",
       },
     },
   },

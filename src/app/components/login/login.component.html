@@ -1,8 +1,10 @@
 <div
-  class="bg-gradient-to-b from-blue to-green grid tablet:grid-cols-2 grid-cols-1 min-h-svh text-white font-Montserrat content-center relative"
+  class="bg-gradient-to-b from-blue to-green flex items-center mobileS:flex-col mobileS:justify-center tablet:items-center tablet:flex-row min-h-svh text-white font-Montserrat content-center relative"
 >
-  <div class="flex flex-col items-center z-10 gap-10">
-    <div>
+  <div
+    class="flex flex-col items-center z-10 gap-10 mobileS:w-full tablet:w-1/2"
+  >
+    <div class="mobileS:hidden tablet:inline">
       <h1
         class="text-4xl tablet:text-5xl laptop:text-7xl laptopL:text-8xl font-extrabold"
       >
@@ -18,7 +20,9 @@
       class="aspect-square w-7/12 max-w-screen-sm min-w-72"
     />
   </div>
-  <div class="flex items-center z-10">
+  <div
+    class="flex mobileS:justify-center tablet:justify-start items-center z-10 mobileS:w-full tablet:w-1/2"
+  >
     <div
       class="bg-blue p-5 rounded-2xl tablet:w-10/12 laptop:w-8/12 max-w-screen-md"
     >
@@ -69,7 +73,7 @@
     viewBox="0 0 1920 680"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    class="absolute bottom-0 z-1 min-w-screen w-screen h-screen/2"
+    class="absolute bottom-0 z-1 min-w-screen w-screen h-screen/2 m mobileS:hidden tablet:inline"
   >
     <path
       fill-rule="evenodd"

@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-
+  title: string = "GC-FAMS"
+  subTitle: string = "Faculty Assessment and Monitoring System"
 }

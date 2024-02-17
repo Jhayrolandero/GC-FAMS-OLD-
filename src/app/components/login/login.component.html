@@ -23,26 +23,27 @@
       class="bg-blue p-5 rounded-2xl tablet:w-10/12 laptop:w-8/12 max-w-screen-md"
     >
       <p class="p-5 text-center text-2xl font-semibold">Welcome</p>
-      <div class="relative inline-block w-10 mr-2 align-middle select-none">
-        <!-- Input element -->
-        <input
-          type="checkbox"
-          id="toggle"
-          name="toggle"
-          class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
-        />
-        <!-- Label for the toggle switch -->
-        <label
-          for="toggle"
-          class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
-        ></label>
-      </div>
-      <!-- Optional label for the toggle switch -->
-      <span class="text-gray-700">Toggle</span>
+
       <form
         action=""
         class="flex flex-col justify-center items-center bg-white2 p-7 rounded-lg gap-5"
       >
+        <input type="checkbox" id="switch" class="hidden peer" />
+
+        <label
+          for="switch"
+          class="relative w w-8/12 py-4 bg-white rounded-full after:py-1 after:absolute after:w-1/2 after:h-full after:rounded-full after:bg-blue after:top-0 after:left-0 after:transition-all after:duration-150 after:content-['Dean'] after:text-center after:font-bold peer-checked:after:left-1/2 peer-checked:after:content-['Faculty']"
+        >
+          <span
+            class="absolute top-0 inset-x-1/2 right-0 text-blue text-center font-bold py-1"
+            >Faculty</span
+          >
+
+          <span
+            class="absolute top-0 inset-x-1/2 left-0 text-blue text-center font-bold py-1"
+            >Dean</span
+          >
+        </label>
         <input
           type="text"
           placeholder="Username"
@@ -53,7 +54,9 @@
           placeholder="Password"
           class="px-5 py-2 rounded-sm text-blue w-full shadow-lg"
         />
-        <a href="" class="text-end text-blue">Forgot Password?</a>
+        <a href="" class="text-end text-blue justify-self-end"
+          >Forgot Password?</a
+        >
         <input
           type="submit"
           value="Login"

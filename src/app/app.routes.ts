@@ -8,9 +8,24 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 
 export const routes: Routes = [
   {path: 'login', component: LoginComponent},
-  {path: 'faculty/0001', component: FacultyComponent},
+  {path: 'faculty', component: FacultyComponent, children: [
+    {path: 'profile', component: FacultyComponent},
+    {path: 'analytics', component: FacultyComponent},
+    {path: 'schedule', component: FacultyComponent},
+    {path: 'projects', component: FacultyComponent},
+    {path: 'graduate-studies', component: FacultyComponent},
+    {path: 'certifications', component: FacultyComponent},
+    {path: 'community-extensions', component: FacultyComponent},
+    {path: 'evaluation', component: FacultyComponent},
+  ]},
   {path: 'admin', component: AdminComponent, children: [
-    {path: 'analytics', component: ProgramAnalyticsComponent}
+    {path: 'admin-profile', component: ProgramAnalyticsComponent},
+    {path: 'program-analytics', component: ProgramAnalyticsComponent},
+    {path: 'faculty-members', component: ProgramAnalyticsComponent},
+    {path: 'faculty-schedules', component: ProgramAnalyticsComponent},
+    {path: 'program-projects', component: ProgramAnalyticsComponent},
+    {path: 'community-extensions', component: ProgramAnalyticsComponent},
+    {path: 'evaluation-analytics', component: ProgramAnalyticsComponent},
   ]},
   {path: '**', component: PagenotfoundComponent}
 ];

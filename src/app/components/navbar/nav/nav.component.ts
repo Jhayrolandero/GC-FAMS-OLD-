@@ -9,5 +9,15 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class NavComponent {
   @Input('title') navTitle = ''
+  @Input('source') imgSource =  ''
 
+  changeImage(){
+    this.imgSource = "Blue" + this.imgSource;
+    console.log("added " + this.imgSource);
+  }
+
+  revertImage(){
+    this.imgSource = this.imgSource.replaceAll('Blue', '');
+    console.log("left " + this.imgSource);
+  } 
 }

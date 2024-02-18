@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { SidebarComponent } from '../components/navbar/sidebar/sidebar.component';
 
 @Component({
-  selector: 'app-faculty',
+  selector: 'app-admin',
   standalone: true,
   imports: [SidebarComponent],
-  templateUrl: './faculty.component.html',
-  styleUrl: './faculty.component.css'
+  templateUrl: './admin.component.html',
+  styleUrl: './admin.component.css'
 })
-export class FacultyComponent {
+export class AdminComponent {
 
 }

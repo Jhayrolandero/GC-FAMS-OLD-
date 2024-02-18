@@ -1,18 +1,28 @@
-<div class="fixed min-h-screen min- min-w-fit bg-blue rounded-r-3xl">
-  <div class="bg-gradient-to-b from-greenBar to-blue p-4 rounded-tr-3xl">
-    <img
-      src="../../../../assets/img/Logo_mockup 1.png"
-      alt=""
-      class="aspect-square max-w-48"
-    />
+<aside class="fixed top-0 left-0">
+  <div class="w-[233px] h-screen bg-gradient-to-b from-greenBar from-0% via-blue via-[180px] to-blue to-100% rounded-r-[25px]">
+      <div class="w-[233px] pt-4 pb-10 flex justify-center items-center">
+          <img src="../../../assets/img/Logo_mockup 1.png" class="w-[60%]">
+      </div>
+      <div class="faculty-side">
+          <ul *ngIf="!isFaculty">
+              <app-nav [title]="'Admin Profile'" [source]="'Person.png'"></app-nav>
+              <app-nav [title]="'Program Analytics'" [source]="'Signal.png'"></app-nav>
+              <app-nav [title]="'Faculty Members'" [source]="'Users.png'"></app-nav>
+              <app-nav [title]="'Faculty Schedules'" [source]="'Vector.png'"></app-nav>
+              <app-nav [title]="'Program Projects'" [source]="'Mortarboard.png'"></app-nav>
+              <app-nav [title]="'Community Extensions'" [source]="'Users.png'"></app-nav>
+              <app-nav [title]="'Evaluation Analytics'" [source]="'ScatterPlot.png'"></app-nav>
+          </ul>
+          <ul *ngIf="isFaculty">
+            <app-nav [title]="'Profile'" [source]="'Person.png'"></app-nav>
+            <app-nav [title]="'Analytics'" [source]="'Signal.png'"></app-nav>
+            <app-nav [title]="'Schedule'" [source]="'Vector.png'"></app-nav>
+            <app-nav [title]="'Projects'" [source]="'ProjectManagement.png'"></app-nav>
+            <app-nav [title]="'Graduate Studies'" [source]="'Mortarboard.png'"></app-nav>
+            <app-nav [title]="'Certifications'" [source]="'Diploma.png'"></app-nav>
+            <app-nav [title]="'Community Extensions'" [source]="'Users.png'"></app-nav>
+            <app-nav [title]="'Evaluation'" [source]="'ScatterPlot.png'"></app-nav>
+        </ul>
+      </div>
   </div>
-  <app-nav [title]="'Admin Profile'"></app-nav>
-  <app-nav [title]="'Program Analytics'"></app-nav>
-  <app-nav [title]="'Faculty Members'"></app-nav>
-  <app-nav [title]="'Faculty Schedules'"></app-nav>
-  <app-nav [title]="'Program Projects'"></app-nav>
-  <app-nav [title]="'Community Extensions'"></app-nav>
-  <app-nav [title]="'Evaluation'"></app-nav>
-  <app-nav [title]="'Feedback'"></app-nav>
-  <app-nav [title]="'About'"></app-nav>
-</div>
+</aside>

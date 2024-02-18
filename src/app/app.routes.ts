@@ -4,11 +4,13 @@ import { FacultyComponent } from './faculty/faculty.component';
 import { FacultyMembersComponent } from './admin/faculty-members/faculty-members.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AnalyticsComponent } from './components/views/analytics/analytics.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 export const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'faculty/202210139', component: FacultyComponent},
   {path: 'admin', component: DashboardComponent, children: [
     {path: 'analytics', component: AnalyticsComponent}
-  ]}
+  ]},
+  {path: '**', component: PagenotfoundComponent}
 ]

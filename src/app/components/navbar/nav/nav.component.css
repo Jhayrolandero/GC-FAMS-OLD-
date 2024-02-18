@@ -28,31 +28,7 @@ li a.selected {
   transition: all 0.2s;
 }
 
-li a:hover:before,
-li a.selected:before {
-  position: absolute;
-  content: "";
-  height: 30px;
-  width: 30px;
-  right: 0;
-  bottom: 100%;
-  border-bottom-right-radius: 13px;
-  background: #074287;
-  box-shadow: 0 17px 0 rgb(255, 255, 255);
-}
 
-li a:hover:after,
-li a.selected:after {
-  position: absolute;
-  content: "";
-  height: 30px;
-  width: 30px;
-  right: 0%;
-  top: 100%;
-  border-top-right-radius: 13px;
-  background: #074287;
-  box-shadow: 0 -17px 0 rgb(255, 255, 255);
-}
 
 /* a:hover::before {
   box-shadow: 10px 4px white;

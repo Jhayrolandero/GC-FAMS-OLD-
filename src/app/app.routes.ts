@@ -6,6 +6,6 @@ import { AdminComponent } from './admin/admin.component';
 
 export const routes: Routes = [
   {path: 'login', component: LoginComponent},
-  {path: 'faculty/202210139', component: FacultyComponent},
+  {path: 'faculty/0001', component: FacultyComponent},
   {path: 'admin', component: AdminComponent}
 ];

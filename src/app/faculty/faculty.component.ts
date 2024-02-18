@@ -9,5 +9,7 @@ import { SidebarComponent } from '../components/navbar/sidebar/sidebar.component
   styleUrl: './faculty.component.css'
 })
 export class FacultyComponent {
-
+  ngOnInit(){
+    console.log("kant!");
+  }
 }

@@ -21,12 +21,15 @@ li a:hover {
   transition: all 0.1s;
 }
 
-li a:before {
-  box-shadow: 0 17px #074287;
-  all: ease-in-out;
+li a.selected {
+  background-color: white;
+  border-left: 8px solid #1e7242;
+  color: #074287;
+  transition: all 0.2s;
 }
 
-li a:hover:before {
+li a:hover:before,
+li a.selected:before {
   position: absolute;
   content: "";
   height: 30px;
@@ -38,7 +41,8 @@ li a:hover:before {
   box-shadow: 0 17px 0 rgb(255, 255, 255);
 }
 
-li a:hover:after {
+li a:hover:after,
+li a.selected:after {
   position: absolute;
   content: "";
   height: 30px;

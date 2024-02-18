@@ -21,7 +21,7 @@ export const routes: Routes = [
   {path: 'admin', component: AdminComponent, children: [
     {path: 'admin-profile', component: ProgramAnalyticsComponent},
     {path: 'program-analytics', component: ProgramAnalyticsComponent},
-    {path: 'faculty-members', component: ProgramAnalyticsComponent},
+    {path: 'faculty-members', component: FacultyMembersComponent},
     {path: 'faculty-schedules', component: ProgramAnalyticsComponent},
     {path: 'program-projects', component: ProgramAnalyticsComponent},
     {path: 'community-extensions', component: ProgramAnalyticsComponent},

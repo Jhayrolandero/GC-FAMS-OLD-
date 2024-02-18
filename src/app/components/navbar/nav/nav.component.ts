@@ -9,20 +9,24 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class NavComponent {
 [x: string]: any;
-  @Input('title') navTitle = ''
-  @Input('source') imgSource =  ''
+  @Input('title') navTitle = '';
+  @Input('source') imgSource =  '';
+  @Input('index') barIndex = '';
+  @Input('selectedBar') selectedBar = '';
   urlTitle!: string;
 
+  //Initializes url title due to async nature of title for navigation
   ngOnInit(): void {
     this.urlTitle = this.navTitle.replace(" ", "-").toLowerCase();
     console.log(this.urlTitle);
   }
 
-  changeImage(){
+  //Band-aid solution for image switch. Will switch to a less-disgusting SVG solution later.
+  changeImage():void{
     this.imgSource = "Blue" + this.imgSource;
   }
 
-  revertImage(){
+  revertImage():void{
     this.imgSource = this.imgSource.replaceAll('Blue', '');
   } 
 }

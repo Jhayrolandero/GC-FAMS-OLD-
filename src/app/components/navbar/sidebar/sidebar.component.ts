@@ -12,10 +12,16 @@ import { NavComponent } from '../nav/nav.component';
 })
 export class SidebarComponent {
   isFaculty: boolean;
+  selectedBar: string = '1';
   accountPath: string;
 
   constructor(private route: ActivatedRoute){
     this.accountPath = this.route.snapshot.url[0].path;
     this.isFaculty = this.accountPath === "faculty";
+  }
+
+  onSelect(index: number){
+    this.selectedBar = index + "";
+    console.log(this.selectedBar);
   }
 }

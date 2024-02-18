@@ -8,6 +8,7 @@ module.exports = {
         green: "#27AE60",
         greenBar: "#1E7242",
         white2: "#F1F1F1",
+        lightGreen: "#27AE60",
       },
       fontFamily: {
         Montserrat: ["Montserrat"],
@@ -20,6 +21,7 @@ module.exports = {
         laptop: "1024px",
         desktop: "1280px",
         laptopL: "1440px",
+        fourk: "2560px",
       },
     },
   },

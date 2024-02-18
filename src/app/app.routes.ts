@@ -5,18 +5,19 @@ import { AdminComponent } from './admin/admin.component';
 import { FacultyMembersComponent } from './admin/faculty-members/faculty-members.component';
 import { ProgramAnalyticsComponent } from './admin/program-analytics/program-analytics.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { AnalyticsComponent } from './faculty/analytics/analytics.component';
 
 export const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'faculty', component: FacultyComponent, children: [
-    {path: 'profile', component: FacultyComponent},
-    {path: 'analytics', component: FacultyComponent},
-    {path: 'schedule', component: FacultyComponent},
-    {path: 'projects', component: FacultyComponent},
-    {path: 'graduate-studies', component: FacultyComponent},
-    {path: 'certifications', component: FacultyComponent},
-    {path: 'community-extensions', component: FacultyComponent},
-    {path: 'evaluation', component: FacultyComponent},
+    {path: 'profile', component: AnalyticsComponent},
+    {path: 'analytics', component: AnalyticsComponent},
+    {path: 'schedule', component: AnalyticsComponent},
+    {path: 'projects', component: AnalyticsComponent},
+    {path: 'graduate-studies', component: AnalyticsComponent},
+    {path: 'certifications', component: AnalyticsComponent},
+    {path: 'community-extensions', component: AnalyticsComponent},
+    {path: 'evaluation', component: AnalyticsComponent},
   ]},
   {path: 'admin', component: AdminComponent, children: [
     {path: 'admin-profile', component: ProgramAnalyticsComponent},

@@ -1,16 +1,91 @@
 <section
   *ngFor="let member of facultyMembers"
-  class="bg-white p-5 flex flex-row gap-2 justify-between items-end rounded-xl shadow-lg hover:bg-gray-300 transition-all"
+  class="bg-white flex flex-col rounded-xl shadow-lg transition-all"
 >
-  <h4 class="text-2xl font-bold">{{ member.name }}</h4>
-  <p class="flex-1 font-semibold">{{ member.units }} Units</p>
-  <span
+  <div
+    (click)="toggle(member)"
     [ngClass]="{
-      'bg-lightGreen': member.status === 'In-Class',
-      'bg-red-600': member.status === 'Day-Off',
-      'bg-slate-400': member.status === 'Unavailable'
+      'bg-white hover:bg-gray-300 rounded-xl': !member.isVisible,
+      'bg-gray-300 rounded-t-xl': member.isVisible
     }"
-    class="px-4 py-2 rounded-full text-white"
-    >{{ member.status }}</span
+    class="flex flex-row justify-between items-end gap-2 p-3"
   >
+    <i
+      [ngClass]="{
+      '-rotate-90': !member.isVisible,
+    }"
+      class="fa-solid fa-chevron-down self-center transition-all"
+    ></i>
+    <h4 class="text-2xl font-bold">{{ member.name }}</h4>
+    <p class="flex-1 font-semibold">{{ member.units }} Units</p>
+    <span
+      [ngClass]="{
+        'bg-lightGreen': member.status === 'In-Class',
+        'bg-red-600': member.status === 'Day-Off',
+        'bg-slate-400': member.status === 'Unavailable'
+      }"
+      class="px-4 py-2 rounded-full text-white"
+      >{{ member.status }}</span
+    >
+  </div>
+
+  <div
+    [ngClass]="{ hidden: !member.isVisible }"
+    class="p-5 flex flex-row gap-3 transition-all"
+  >
+    <img
+      src="../../../assets/profiles/sanji 2.png"
+      alt=""
+      class="aspect-square laptop:w-1/3 laptopL:w-1/6 min-w-40 max-w-64 tablet:hidden laptopL:block"
+    />
+    <div class="flex flex-col flex-1">
+      <div class="flex tablet:flex-row laptopL:flex-col">
+        <img
+          src="../../../assets/profiles/sanji 2.png"
+          alt=""
+          class="aspect-square laptop:w-1/3 laptopL:w-1/6 min-w-40 max-w-64 tablet:block laptopL:hidden"
+        />
+        <div
+          class="flex laptopL:justify-between tablet:flex-col laptopL:flex-row"
+        >
+          <p>{{ member.employment }}</p>
+          <p>Tuesday</p>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap gap-2 justify-center bg-white shadow-lg px-6 py-3 rounded-2xl"
+      >
+        <div
+          class="bg-blue flex-initial bg bg-gradient-to-r from-blue to-greenBar px-5 py-2 rounded-xl"
+        >
+          <div><p class="text-2xl text-white">Discrete Structure</p></div>
+          <div><p class="text-2xl text-white">7AM - 10 AM</p></div>
+        </div>
+        <div
+          class="bg-blue flex-initial bg bg-gradient-to-r from-blue to-greenBar px-5 py-2 rounded-xl"
+        >
+          <div><p class="text-2xl text-white">Discrete Structure</p></div>
+          <div><p class="text-2xl text-white">7AM - 10 AM</p></div>
+        </div>
+        <div
+          class="bg-blue flex-initial bg bg-gradient-to-r from-blue to-greenBar px-5 py-2 rounded-xl"
+        >
+          <div><p class="text-2xl text-white">Discrete Structure</p></div>
+          <div><p class="text-2xl text-white">7AM - 10 AM</p></div>
+        </div>
+        <div
+          class="bg-blue flex-initial bg bg-gradient-to-r from-blue to-greenBar px-5 py-2 rounded-xl"
+        >
+          <div><p class="text-2xl text-white">Discrete Structure</p></div>
+          <div><p class="text-2xl text-white">7AM - 10 AM</p></div>
+        </div>
+        <div
+          class="bg-blue flex-initial bg bg-gradient-to-r from-blue to-greenBar px-5 py-2 rounded-xl"
+        >
+          <div><p class="text-2xl text-white">Discrete Structure</p></div>
+          <div><p class="text-2xl text-white">7AM - 10 AM</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

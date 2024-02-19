@@ -12,6 +12,8 @@ import { FacultyMember } from '../../../../services/admin/facultymembers';
 })
 export class FacultyBoxComponent implements OnInit{
 
+  isVisible: boolean = false;
+
   facultyMembers: FacultyMember[] = [];
 
   constructor(private facultyService: FacultymembersService) {}
@@ -24,5 +26,10 @@ export class FacultyBoxComponent implements OnInit{
       this.getFacultyMembers();
 
       console.log(this.facultyMembers)
+  }
+
+
+  toggle(member: FacultyMember):void {
+    member.isVisible = !member.isVisible;
   }
 }

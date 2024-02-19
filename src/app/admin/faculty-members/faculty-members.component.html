@@ -1,38 +1,70 @@
 <div
   class="min-h-screen bg-white2 p-5 max-w-screen-fourk ml-60 flex flex-col gap-3 text-blue"
 >
-  <section class="bg-white p-8 flex flex-col">
+  <section class="bg-white p-8 flex flex-col rounded-xl shadow-lg">
     <h4>Faculty Overview</h4>
-    <div class="flex flex-row gap-3 flex-wrap">
+    <div class="flex flex-row gap-3 flex-wrap text-white">
       <div
-        class="bg-blue flex-auto bg bg-gradient-to-r from-blue to-greenBar flex flex-row p-2"
+        class="bg-blue flex-auto bg bg-gradient-to-r from-blue to-greenBar flex flex-row p-2 rounded-lg"
       >
         <div class="flex-none">
           <img src="../../../assets/admin/Profiles.png" alt="" />
         </div>
         <div class="flex-auto">
           <div>
-            <h4>Faculty</h4>
+            <h4>FACULTY</h4>
           </div>
           <div class="flex flex-row">
             <div class="flex-auto">9</div>
             <div class="flex-1">
-              <p>Full Time:</p>
-              <p>Part TIme:</p>
+              <p>Full Time: 8</p>
+              <p>Part TIme: 1</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="bg-blue flex-1 bg bg-gradient-to-r from-blue to-greenBar">
-        a
+      <div
+        class="bg-blue flex-auto bg bg-gradient-to-r from-blue to-greenBar flex flex-row p-2 rounded-lg"
+      >
+        <div class="flex-none">
+          <img src="../../../assets/admin/Profiles.png" alt="" />
+        </div>
+        <div class="flex-auto">
+          <div>
+            <h4>EVALUATION AVERAGE</h4>
+          </div>
+          <div class="flex flex-row">
+            <div class="flex-auto">5.0</div>
+            <div class="flex-1">
+              <p>Full Time: 8</p>
+              <p>Part TIme: 1</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-blue flex-1 bg bg-gradient-to-r from-blue to-greenBar">
-        a
+      <div
+        class="bg-blue flex-auto bg bg-gradient-to-r from-blue to-greenBar flex flex-row p-2 rounded-lg"
+      >
+        <div class="flex-none">
+          <img src="../../../assets/admin/Profiles.png" alt="" />
+        </div>
+        <div class="flex-auto">
+          <div>
+            <h4>IN-CLASS</h4>
+          </div>
+          <div class="flex flex-row">
+            <div class="flex-auto">4</div>
+            <div class="flex-1">
+              <p>Full Time: 8</p>
+              <p>Part TIme: 1</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-white p-5 flex flex-row gap-2">
+  <section class="bg-white p-5 flex flex-row gap-2 rounded-xl shadow-lg">
     <img
       src="../../../assets/profiles/sanji 2.png"
       alt=""
@@ -90,27 +122,5 @@
     </div>
   </section>
 
-  <section class="bg-white p-5 flex flex-row gap-2 justify-between items-end">
-    <h4 class="text-2xl font-bold">Nami Navigator</h4>
-    <p class="flex-1 font-semibold">20 Units</p>
-    <span class="bg-lightGreen px-4 py-2 rounded-full text-white"
-      >In-Class</span
-    >
-  </section>
-  <section
-    class="bg-white p-5 flex flex-row gap-2 justify-between items-center"
-  >
-    <h4 class="text-2xl font-bold">Nico Robin</h4>
-    <p class="flex-1 font-semibold">21 Units</p>
-    <span class="bg-red-500 px-4 py-2 rounded-full text-white">Day Off</span>
-  </section>
-  <section
-    class="bg-white p-5 flex flex-row gap-2 justify-between items-center"
-  >
-    <h4 class="text-2xl font-bold">Jinbel Son</h4>
-    <p class="flex-1 font-semibold">22 Units</p>
-    <span class="bg-gray-400 px-4 py-2 rounded-full text-white"
-      >Unavailable</span
-    >
-  </section>
+  <app-faculty-box></app-faculty-box>
 </div>

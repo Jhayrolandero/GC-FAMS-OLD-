@@ -12,6 +12,8 @@ module.exports = {
       },
       fontFamily: {
         Montserrat: ["Montserrat"],
+        Poppins: ["Poppins"],
+        Roboto: ["Roboto"]
       },
       screens: {
         mobileS: "320px",

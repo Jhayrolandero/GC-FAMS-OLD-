@@ -1,0 +1,16 @@
+<section
+  *ngFor="let member of facultyMembers"
+  class="bg-white p-5 flex flex-row gap-2 justify-between items-end rounded-xl shadow-lg hover:bg-gray-300 transition-all"
+>
+  <h4 class="text-2xl font-bold">{{ member.name }}</h4>
+  <p class="flex-1 font-semibold">{{ member.units }} Units</p>
+  <span
+    [ngClass]="{
+      'bg-lightGreen': member.status === 'In-Class',
+      'bg-red-600': member.status === 'Day-Off',
+      'bg-slate-400': member.status === 'Unavailable'
+    }"
+    class="px-4 py-2 rounded-full text-white"
+    >{{ member.status }}</span
+  >
+</section>

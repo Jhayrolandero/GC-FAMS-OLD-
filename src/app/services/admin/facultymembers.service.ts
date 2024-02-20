@@ -1,22 +1,35 @@
 import { Injectable } from '@angular/core';
 import { FacultyMember } from './facultymembers';
+import { Observable, of } from 'rxjs';
+import { FACULTYMEMBERS } from './mock-faculty-members';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
-export class FacultymembersService {
+export class FacultymembersService{
 
-  facultyMembers: FacultyMember[] = [
-    {name: "Nami Navigator", units: 20, status: "In-Class", employment: "Part-Time", isVisible: false},
-    {name: "Soul King", units: 21, status: "In-Class", employment: "Full-Time", isVisible: false},
-    {name: "Nico Robin", units: 21, status: "Day-Off", employment: "Full-Time", isVisible: false},
-    {name: "Tony Chopper", units: 18, status: "In-Class", employment: "Part-Time", isVisible: false},
-    {name: "Jinbel Son", units: 22, status: "Unavailable", employment: "Part-Time", isVisible: false},
-  ]
+  constructor( private http: HttpClient ) { }
 
-  getFacultyMembers(): FacultyMember[] {
-    return this.facultyMembers;
+  private facultyMembersURI = 'http://localhost:3000/facultyMembers';  // URL to web api
+
+
+  // getFacultyMembers(): FacultyMember[] {
+  //   return this.facultyMembers;
+  // }
+
+  // getFacultyMembers(): Observable<FacultyMember[]> {
+  //   const heroes = of(FACULTYMEMBERS);
+  //   return heroes;
+  // }
+
+  getFacultyMembers(): Observable<FacultyMember[]> {
+    return this.http.get<FacultyMember[]>(this.facultyMembersURI)
   }
+  // getFacultyMembers(): Observable<FacultyMember[]> {
+  //   return this.http.get<FacultyMember[]>(this.facultyMembersURI)
+  // }
 
-  constructor() { }
+
+
 }

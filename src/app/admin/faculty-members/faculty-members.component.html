@@ -64,5 +64,8 @@
     </div>
   </section>
 
-  <app-faculty-box></app-faculty-box>
+  <app-faculty-box
+    *ngFor="let member of facultyMembers"
+    [member]="member"
+  ></app-faculty-box>
 </div>

@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { FacultymembersService } from '../../../services/admin/facultymembers.service';
 @Component({
@@ -9,17 +9,13 @@ import { FacultymembersService } from '../../../services/admin/facultymembers.se
   templateUrl: './date-select.component.html',
   styleUrl: './date-select.component.css'
 })
-export class DateSelectComponent implements OnInit{
+export class DateSelectComponent{
 
   day: string = "Monday";
-  @Input('id') id:number = -1;
-  @Output() schedules = new EventEmitter<string>();
-
-
-  constructor(private facultyServices: FacultymembersService) {}
+  @Output() params = new EventEmitter<string>();
 
   getFacultySchedule() {
-    let params: string = '?day=';
+    let params: string = 'day=';
 
     switch(this.day) {
       case "Monday":
@@ -45,23 +41,7 @@ export class DateSelectComponent implements OnInit{
         break;
     }
 
-    params = params.concat(`&facultyID=${this.id}`)
-
-    console.log(params);
-    this.facultyServices.getFacultySchedules(params).subscribe(
-      schedule => this.schedules.emit(schedule)
-      )
+    this.params.emit(params);
   }
 
-  ngOnInit(): void {
-
-    let params: string = '?day=';
-    params.concat(this.day);
-    params = params.concat(`&facultyID=${this.id}`)
-
-    console.log(params);
-    this.facultyServices.getFacultySchedules(params).subscribe(
-      schedule => this.schedules.emit(schedule)
-    )
-  }
 }

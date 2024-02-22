@@ -1,6 +1,6 @@
 <section class="bg-white flex flex-col rounded-xl shadow-lg transition-all">
   <div
-    (click)="toggle(member)"
+    (click)="toggle()"
     [ngClass]="{
       'bg-white hover:bg-gray-300 rounded-xl': !member.isVisible,
       'bg-gray-300 rounded-t-xl': member.isVisible
@@ -28,7 +28,7 @@
 
   <div
     [ngClass]="{ hidden: !member.isVisible }"
-    class="p-5 flex flex-row gap-3 transition-all"
+    class="p-5 flex flex-row gap-3 transition ease-in-out delay-150"
   >
     <img
       width="100"
@@ -49,30 +49,14 @@
         <div
           class="flex laptopL:justify-between tablet:flex-col laptopL:flex-row"
         >
-          <p>{{ member.employment }}</p>
+          <p class="text-lg font-semibold">{{ member.employment }}</p>
           <app-date-select
             [id]="member.id"
-            (schedules)="addSchedules($event)"
+            (params)="setDay($event)"
           ></app-date-select>
         </div>
       </div>
-      <div
-        class="flex flex-wrap gap-2 justify-center bg-white shadow-lg px-6 py-3 rounded-2xl"
-      >
-        <div
-          *ngFor="let schedule of schedules"
-          class="bg-blue flex-initial bg bg-gradient-to-r from-blue to-greenBar px-5 py-2 rounded-xl"
-        >
-          <div>
-            <p class="text-2xl text-white">{{ schedule.courseID }}</p>
-          </div>
-          <div>
-            <p class="text-2xl text-white">
-              {{ schedule.start }} AM - {{ schedule.end }} AM
-            </p>
-          </div>
-        </div>
-      </div>
+      <app-schedule-section [schedules]="schedules"> </app-schedule-section>
     </div>
   </div>
 </section>

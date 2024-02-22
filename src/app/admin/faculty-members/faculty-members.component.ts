@@ -20,9 +20,6 @@ export class FacultyMembersComponent implements OnInit {
 
   constructor( private facultyService: FacultymembersService ){}
 
-  // getFacultyMembers(): void {
-  //   this.facultyMembers = this.facultyService.getFacultyMembers();
-  // }
   getFacultyMembers(): void {
     this.facultyService.getFacultyMembers()
         .subscribe(facultyMembers => this.facultyMembers = facultyMembers);

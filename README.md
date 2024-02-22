@@ -20,6 +20,34 @@ For easier experience, use GitHub Desktop for simple push and pull functionaliti
 
   You now have essentially cloned the latest version of our main repository. Some functionalities are still not available, as you need to install other packages.
 
-### 2. Installing packages
+### 2. Installing Angular and Node
+  In order to prevent bloated file sizes for this repository, the node package itself was included on the .gitignore. This means that you have to manually install the node package in order to do npm-related commands.
+  ```
+  npm install node
+  ```
 
-IM TOO LAZY TO TYPE THIS OOPSIES 
+  The Angular installation guide can be seen [here.](https://angular.io/guide/setup-local) This link also includes all information relating to the framework, so take some time to learn the basic ins and outs.
+
+  Install the Angular CLI by running the following npm command on the terminal with the current repository directory selected.
+  ```
+  npm install -g @angular/cli
+  ```
+
+  In some cases, Windows generally disable the execution of Powershell scripts. In an event that it does on your side, run this line of command.
+  ```
+  Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+  ```
+  Now that the Angular CLI has been installed, you can now run Angular commands that usually aren't available to your side.
+
+### 3. Running GC-FMS Web Application
+  Take note that the following commands to be provided will only work if your terminal is currently selecting the GC-FMS directory.
+
+  In order to run the web-application itself, use the serve command on the Angular CLI (Just use the same terminal as before, but you're utilizing Angular commands.)
+  ```
+  ng serve --open
+  ```
+
+  After a few seconds, you will see the initial chunk files rendered as shown in the terminal line.
+  ![image](https://github.com/paranoid-android12/GC-FAMS/assets/113983506/1e79434d-08e8-4686-b21c-9fad88015ab8)
+
+  Open the link of the localhost link provided below. This link renders live meaning that all changes done in the codebase will be reflected in real time on the browser.

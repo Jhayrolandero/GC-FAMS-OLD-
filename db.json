@@ -1,7 +1,7 @@
 {
   "facultyMembers": [
     {
-      "id": 0,
+      "id": 1,
       "name": "Nami Navigator",
       "units": 20,
       "status": "In-Class",
@@ -10,7 +10,7 @@
       "profileIMG": "nami"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Soul King",
       "units": 21,
       "status": "In-Class",
@@ -19,7 +19,7 @@
       "profileIMG": "soul"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Nico Robin",
       "units": 21,
       "status": "Day-Off",
@@ -28,7 +28,7 @@
       "profileIMG": "robin"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Tony Chopper",
       "units": 18,
       "status": "In-Class",
@@ -37,7 +37,7 @@
       "profileIMG": "chopper"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Jinbel Son",
       "units": 22,
       "status": "Unavailable",
@@ -46,13 +46,278 @@
       "profileIMG": "jinbei"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Vinsmoke Sanji",
       "units": 22,
       "status": "Unavailable",
       "employment": "Full-Time",
       "isVisible": false,
       "profileIMG": "sanji"
+    }
+  ],
+  "FacultyCourse": [
+    {
+      "facultyID": 1,
+      "courseID": 23232,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 1,
+      "courseID": 23232,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 1,
+      "courseID": 23232,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 1,
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 1,
+      "courseID": 30310,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 1,
+      "courseID": 696969,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 1,
+      "courseID": 31321,
+      "day": "Friday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 696969,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 31321,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 30310,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 23232,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 23232,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 696969,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 31321,
+      "day": "Saturday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 3,
+      "courseID": 31321,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 3,
+      "courseID": 31321,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 3,
+      "courseID": 30310,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 3,
+      "courseID": 23232,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 3,
+      "courseID": 23232,
+      "day": "Friday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 3,
+      "courseID": 696969,
+      "day": "Friday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 3,
+      "courseID": 696969,
+      "day": "Sunday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 31321,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 31321,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 23232,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 23232,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 696969,
+      "day": "Friday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 5,
+      "courseID": 23232,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 5,
+      "courseID": 23232,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 5,
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 5,
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 5,
+      "courseID": 31321,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 5,
+      "courseID": 31321,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 5,
+      "courseID": 696969,
+      "day": "Sunday",
+      "start": "10:00",
+      "end": "13:00"
+    }
+  ],
+  "course": [
+    {
+      "course_code": 23232,
+      "course_name": "Discrete Structures"
+    },
+    {
+      "course_code": 30310,
+      "course_name": "Application Development"
+    },
+    {
+      "course_code": 31321,
+      "course_name": "Network 1"
+    },
+    {
+      "course_code": 696969,
+      "course_name": "Human Computer Interaction"
     }
   ]
 }

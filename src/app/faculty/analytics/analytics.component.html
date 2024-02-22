@@ -3,8 +3,9 @@
 >
     <div class="bg-white shadow-lg bg-opacity-70 w-full h-[500px] rounded-[25px] flex flex-row items-center">
         <div class="bg-white shadow w-[400px] h-[90%] rounded-[25px] overflow-hidden m-[15px] mr-1 flex flex-col items-center hover:shadow-xl hover:duration-300 duration-300">
-            <div class="h-[50%] flex justify-center">
-                <img src="../../../assets/profiles/luffy.png" class="h-[100%]">
+            <div class="h-[50%] w-full flex justify-center relative">
+              <img src="../../../assets/profiles/luffy.png" class="h-[100%] ">
+              <div class="absolute w-full h-full hover:inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-50 hover:opacity-80 duration-300"></div>
             </div>
             <div class="h-[50%] w-[100%]">
                 <h1 class="font-Poppins font-bold text-[1.6rem] text-center">Monkey D. Luffy</h1>
@@ -43,12 +44,10 @@
                 </ul>
             </div>
 
+            <app-faculty-milestone-calendar></app-faculty-milestone-calendar>
 
-            <div class="bg-red-100">
-              <app-faculty-milestone-calendar></app-faculty-milestone-calendar>
-              
-
-            </div>
+            <h4 class="font-Poppins font-semibold text-[1.4rem] py-2">Milestone History</h4>
+            <app-faculty-milestone-history></app-faculty-milestone-history>
           </div>
                 
         </div>

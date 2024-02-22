@@ -15,6 +15,11 @@ import { NgOptimizedImage } from '@angular/common';
 export class FacultyBoxComponent{
 
   isVisible: boolean = false;
+  schedules: any = [];
+
+  addSchedules(schedules: any) {
+    this.schedules = schedules;
+  }
   @Input('member') member: FacultyMember = {
     id:0, name: '', units: 0, status: '', employment: '', isVisible: false, profileIMG: ''
   };

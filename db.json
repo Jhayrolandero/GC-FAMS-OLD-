@@ -1,7 +1,7 @@
 {
   "facultyMembers": [
     {
-      "id": 0,
+      "id": 1,
       "name": "Nami Navigator",
       "units": 20,
       "status": "In-Class",
@@ -10,7 +10,7 @@
       "profileIMG": "nami"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Soul King",
       "units": 21,
       "status": "In-Class",
@@ -19,7 +19,7 @@
       "profileIMG": "soul"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Nico Robin",
       "units": 21,
       "status": "Day-Off",
@@ -28,7 +28,7 @@
       "profileIMG": "robin"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Tony Chopper",
       "units": 18,
       "status": "In-Class",
@@ -37,7 +37,7 @@
       "profileIMG": "chopper"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Jinbel Son",
       "units": 22,
       "status": "Unavailable",
@@ -46,7 +46,7 @@
       "profileIMG": "jinbei"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Vinsmoke Sanji",
       "units": 22,
       "status": "Unavailable",
@@ -55,183 +55,267 @@
       "profileIMG": "sanji"
     }
   ],
-
   "FacultyCourse": [
     {
       "facultyID": 1,
-      "courseID": 1,
-      "schedule": "Monday 7:00 A.M. - 10:00 A.M."
+      "courseID": 23232,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 1,
-      "courseID": 1,
-      "schedule": "Monday 10:00 A.M - 1:00 P.M."
+      "courseID": 23232,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 1,
-      "courseID": 1,
-      "schedule": "Tuesday 10:00 A.M - 1:00 P.M."
+      "courseID": 23232,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 1,
-      "courseID": 2,
-      "schedule": "Wednesday 1:00 P.M - 4:00 P.M"
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 1,
-      "courseID": 2,
-      "schedule": "Thursday 1:00 P.M - 4:00 P.M"
+      "courseID": 30310,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 1,
-      "courseID": 4,
-      "schedule": "Thursday 10:00 A.M - 1:00 P.M"
-    },
-    { "facultyID": 1, "courseID": 3, "schedule": "Friday 1:00 P.M - 4:00 P.M" },
-    {
-      "facultyID": 2,
-      "courseID": 4,
-      "schedule": "Monday 7:00 A.M. - 10:00 A.M."
+      "courseID": 696969,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
-      "facultyID": 2,
-      "courseID": 3,
-      "schedule": "Monday 10:00 A.M - 1:00 P.M."
-    },
-    {
-      "facultyID": 2,
-      "courseID": 2,
-      "schedule": "Tuesday 10:00 A.M - 1:00 P.M."
+      "facultyID": 1,
+      "courseID": 31321,
+      "day": "Friday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 2,
-      "courseID": 1,
-      "schedule": "Wednesday 1:00 P.M - 4:00 P.M"
+      "courseID": 696969,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 2,
-      "courseID": 1,
-      "schedule": "Thursday 1:00 P.M - 4:00 P.M"
+      "courseID": 31321,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 2,
-      "courseID": 4,
-      "schedule": "Thursday 10:00 A.M - 1:00 P.M"
+      "courseID": 30310,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
     },
-    { "facultyID": 2, "courseID": 3, "schedule": "Friday 1:00 P.M - 4:00 P.M" },
+    {
+      "facultyID": 2,
+      "courseID": 23232,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 23232,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 696969,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 2,
+      "courseID": 31321,
+      "day": "Saturday",
+      "start": "10:00",
+      "end": "13:00"
+    },
     {
       "facultyID": 3,
-      "courseID": 3,
-      "schedule": "Monday 7:00 A.M. - 10:00 A.M."
+      "courseID": 31321,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 3,
-      "courseID": 3,
-      "schedule": "Monday 10:00 A.M - 1:00 P.M."
+      "courseID": 31321,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 3,
-      "courseID": 2,
-      "schedule": "Tuesday 10:00 A.M - 1:00 P.M."
+      "courseID": 30310,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 3,
-      "courseID": 1,
-      "schedule": "Wednesday 1:00 P.M - 4:00 P.M"
+      "courseID": 23232,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 3,
-      "courseID": 1,
-      "schedule": "Thursday 1:00 P.M - 4:00 P.M"
+      "courseID": 23232,
+      "day": "Friday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 3,
-      "courseID": 4,
-      "schedule": "Thursday 10:00 A.M - 1:00 P.M"
-    },
-    { "facultyID": 3, "courseID": 4, "schedule": "Friday 1:00 P.M - 4:00 P.M" },
-    {
-      "facultyID": 4,
-      "courseID": 3,
-      "schedule": "Monday 7:00 A.M. - 10:00 A.M."
+      "courseID": 696969,
+      "day": "Friday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
-      "facultyID": 4,
-      "courseID": 3,
-      "schedule": "Monday 10:00 A.M - 1:00 P.M."
-    },
-    {
-      "facultyID": 4,
-      "courseID": 2,
-      "schedule": "Tuesday 10:00 A.M - 1:00 P.M."
+      "facultyID": 3,
+      "courseID": 696969,
+      "day": "Sunday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 4,
-      "courseID": 2,
-      "schedule": "Wednesday 1:00 P.M - 4:00 P.M"
+      "courseID": 31321,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 4,
-      "courseID": 1,
-      "schedule": "Thursday 1:00 P.M - 4:00 P.M"
+      "courseID": 31321,
+      "day": "Tuesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 4,
-      "courseID": 1,
-      "schedule": "Thursday 10:00 A.M - 1:00 P.M"
-    },
-    { "facultyID": 4, "courseID": 4, "schedule": "Friday 1:00 P.M - 4:00 P.M" },
-    {
-      "facultyID": 5,
-      "courseID": 1,
-      "schedule": "Monday 7:00 A.M. - 10:00 A.M."
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
-      "facultyID": 5,
-      "courseID": 1,
-      "schedule": "Monday 10:00 A.M - 1:00 P.M."
+      "facultyID": 4,
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 23232,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 23232,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 4,
+      "courseID": 696969,
+      "day": "Friday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 5,
-      "courseID": 2,
-      "schedule": "Tuesday 10:00 A.M - 1:00 P.M."
+      "courseID": 23232,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 5,
-      "courseID": 2,
-      "schedule": "Wednesday 1:00 P.M - 4:00 P.M"
+      "courseID": 23232,
+      "day": "Monday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 5,
-      "courseID": 3,
-      "schedule": "Thursday 1:00 P.M - 4:00 P.M"
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
     },
     {
       "facultyID": 5,
-      "courseID": 3,
-      "schedule": "Thursday 10:00 A.M - 1:00 P.M"
+      "courseID": 30310,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
     },
-    { "facultyID": 5, "courseID": 4, "schedule": "Friday 1:00 P.M - 4:00 P.M" }
+    {
+      "facultyID": 5,
+      "courseID": 31321,
+      "day": "Wednesday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 5,
+      "courseID": 31321,
+      "day": "Thursday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
+      "facultyID": 5,
+      "courseID": 696969,
+      "day": "Sunday",
+      "start": "10:00",
+      "end": "13:00"
+    }
   ],
-
   "course": [
     {
-      "id": 1,
       "course_code": 23232,
       "course_name": "Discrete Structures"
     },
     {
-      "id": 2,
       "course_code": 30310,
       "course_name": "Application Development"
     },
     {
-      "id": 3,
       "course_code": 31321,
       "course_name": "Network 1"
     },
     {
-      "id": 4,
       "course_code": 696969,
       "course_name": "Human Computer Interaction"
     }

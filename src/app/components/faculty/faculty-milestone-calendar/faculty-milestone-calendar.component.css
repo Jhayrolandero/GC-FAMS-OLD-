@@ -1,11 +1,26 @@
 table{
     border-collapse: separate;
-    border-spacing: 2px;
+    border-spacing: 3px;
 }
 
 td{
     text-align: center;
-    border: 1px solid black;
-    width: 22px;
-    height: 22px;
+    width: 19.5px;
+    height: 19.5px;
+    border-radius: 4px;
+    background-color: #F0F0F0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px 0;
+    transition: 0.3s;
+}
+
+td:hover{
+    background-color: aquamarine;
+    transition: 0.1s;
+}
+
+th{
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 200;
+    color: black;
 }

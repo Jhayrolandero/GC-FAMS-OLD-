@@ -6,13 +6,14 @@ import { FacultyMembersComponent } from './admin/faculty-members/faculty-members
 import { ProgramAnalyticsComponent } from './admin/program-analytics/program-analytics.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { AnalyticsComponent } from './faculty/analytics/analytics.component';
+import { ScheduleComponent } from './faculty/schedule/schedule.component';
 
 export const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'faculty', component: FacultyComponent, children: [
     {path: 'profile', component: AnalyticsComponent},
     {path: 'analytics', component: AnalyticsComponent},
-    {path: 'schedule', component: AnalyticsComponent},
+    {path: 'schedule', component: ScheduleComponent},
     {path: 'projects', component: AnalyticsComponent},
     {path: 'graduate-studies', component: AnalyticsComponent},
     {path: 'certifications', component: AnalyticsComponent},

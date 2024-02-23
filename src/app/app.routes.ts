@@ -7,8 +7,6 @@ import { ProgramAnalyticsComponent } from './admin/program-analytics/program-ana
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { AnalyticsComponent } from './faculty/analytics/analytics.component';
 import { ScheduleComponent } from './faculty/schedule/schedule.component';
-import { CommunityExtensionsComponent } from './faculty/community-extensions/community-extensions.component';
-
 export const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'faculty', component: FacultyComponent, children: [
@@ -18,7 +16,7 @@ export const routes: Routes = [
     {path: 'projects', component: AnalyticsComponent},
     {path: 'graduate-studies', component: AnalyticsComponent},
     {path: 'certifications', component: AnalyticsComponent},
-    {path: 'community-extensions', component: CommunityExtensionsComponent},
+    {path: 'community-extensions', component: AnalyticsComponent},
     {path: 'evaluation', component: AnalyticsComponent},
   ]},
   {path: 'admin', component: AdminComponent, children: [

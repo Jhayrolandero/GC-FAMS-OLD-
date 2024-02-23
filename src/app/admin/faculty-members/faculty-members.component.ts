@@ -3,12 +3,11 @@ import { FacultyBoxComponent } from '../../components/admin/faculty-members/facu
 import { FacultymembersService } from '../../services/admin/facultymembers.service';
 import { FacultyMember } from '../../services/admin/facultymembers';
 import { NgFor } from '@angular/common';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-
+import { PaginationComponent } from '../../components/pagination/pagination.component';
 @Component({
   selector: 'app-faculty-members',
   standalone: true,
-  imports: [FacultyBoxComponent, NgFor],
+  imports: [FacultyBoxComponent, NgFor, PaginationComponent],
   providers: [FacultymembersService],
   templateUrl: './faculty-members.component.html',
   styleUrl: './faculty-members.component.css'
@@ -26,7 +25,5 @@ export class FacultyMembersComponent implements OnInit {
   }
   ngOnInit(): void {
     this.getFacultyMembers();
-
-    console.log(this.facultyMembers)
 }
 }

@@ -535,5 +535,61 @@
       "course_code": 696969,
       "course_name": "Human Computer Interaction"
     }
+  ],
+  "commex": [
+    {
+      "id": 1,
+      "title": "iLoveYouVirus: CodeRED",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non placeat harum doloremque labore ratione qui nostrum illum fuga et. Maiores adipisci iusto vel quae fugit amet blanditiis dolor, dolorum rerum illum exercitationem vero eligendi, quas eveniet odit, provident iure porro obcaecati. Dolorum deserunt dolores odio tempore amet esse, possimus assumenda, fugiat quia eligendi sapiente vel adipisci? Laborum nulla temporibus beatae praesentium odio nisi, voluptatum deserunt quos quam dignissimos aspernatur nobis.",
+      "date": "2-14-2024"
+    },
+    {
+      "id": 2,
+      "title": "iLoveYouVirus: CodeRED",
+      "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio suscipit dolorem consequuntur libero, iure ad eveniet corporis, quod explicabo voluptatum sapiente nihil magni cumque blanditiis? Ut repellendus quisquam facere incidunt quae iusto odio, aliquid mollitia, beatae adipisci dolore nihil atque.",
+      "date": "2-14-2024"
+    },
+    {
+      "id": 3,
+      "title": "iLoveYouVirus: CodeRED",
+      "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nostrum minus non quo esse ipsum placeat et sint ipsa porro odio, vitae quas quae rem excepturi. Voluptatibus ut atque sapiente provident ex itaque debitis eligendi at iure aperiam, et velit sint ipsa architecto neque soluta obcaecati tenetur quasi est? Magni nam molestias nostrum hic tempora magnam, porro suscipit provident fugit non mollitia accusamus corporis, atque eius corrupti odit accusantium natus.",
+      "date": "2-14-2024"
+    },
+    {
+      "id": 4,
+      "title": "iLoveYouVirus: CodeRED",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolores corporis molestias! Aperiam culpa eius aspernatur adipisci debitis aliquam tempora veniam iure amet, laudantium nam unde at suscipit facere ab saepe ullam quidem tempore ipsum. Non sit rerum tempora dolorem quasi natus minus itaque. Ad!",
+      "date": "2-14-2024"
+    },
+    {
+      "id": 5,
+      "title": "iLoveYouVirus: CodeRED",
+      "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio suscipit dolorem consequuntur libero, iure ad eveniet corporis, quod explicabo voluptatum sapiente nihil magni cumque blanditiis? Ut repellendus quisquam facere incidunt quae iusto odio, aliquid mollitia, beatae adipisci dolore nihil atque.",
+      "date": "2-14-2024"
+    },
+    {
+      "id": 6,
+      "title": "iLoveYouVirus: CodeRED",
+      "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio suscipit dolorem consequuntur libero, iure ad eveniet corporis, quod explicabo voluptatum sapiente nihil magni cumque blanditiis? Ut repellendus quisquam facere incidunt quae iusto odio, aliquid mollitia, beatae adipisci dolore nihil atque.",
+      "date": "2-14-2024"
+    },
+    {
+      "id": 7,
+      "title": "iLoveYouVirus: CodeRED",
+      "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio suscipit dolorem consequuntur libero, iure ad eveniet corporis, quod explicabo voluptatum sapiente nihil magni cumque blanditiis? Ut repellendus quisquam facere incidunt quae iusto odio, aliquid mollitia, beatae adipisci dolore nihil atque.",
+      "date": "2-14-2024"
+    },
+    {
+      "id": 8,
+      "title": "iLoveYouVirus: CodeRED",
+      "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio suscipit dolorem consequuntur libero, iure ad eveniet corporis, quod explicabo voluptatum sapiente nihil magni cumque blanditiis? Ut repellendus quisquam facere incidunt quae iusto odio, aliquid mollitia, beatae adipisci dolore nihil atque.",
+      "date": "2-14-2024"
+    },
+    {
+      "id": 9,
+      "title": "iLoveYouVirus: CodeRED",
+      "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio suscipit dolorem consequuntur libero, iure ad eveniet corporis, quod explicabo voluptatum sapiente nihil magni cumque blanditiis? Ut repellendus quisquam facere incidunt quae iusto odio, aliquid mollitia, beatae adipisci dolore nihil atque.",
+      "date": "2-14-2024"
+    }
   ]
 }

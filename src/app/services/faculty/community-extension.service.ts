@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';\
+import { HttpClient } from '@angular/common/http';
 import { CommunityExtension } from './community-extension';
 
 @Injectable({
@@ -8,7 +8,7 @@ import { CommunityExtension } from './community-extension';
 export class CommunityExtensionService {
 
   constructor(private http: HttpClient) { }
-  url = "http://localhost:3000/community-extension";
+  url = "http://localhost:3000/commex";
 
   displey(){
     return "Power vacuum!";

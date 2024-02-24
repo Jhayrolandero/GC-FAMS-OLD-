@@ -15,8 +15,8 @@
           <div class="flex flex-row">
             <div class="flex-auto text-6xl font-bold">9</div>
             <div class="flex-1">
-              <p>Full Time: 8</p>
-              <p>Part TIme: 1</p>
+              <p>Full Time: {{ fullTime }}</p>
+              <p>Part TIme: {{ partTime }}</p>
             </div>
           </div>
         </div>
@@ -49,8 +49,8 @@
           <div class="flex flex-row">
             <div class="flex-auto text-6xl font-bold">4</div>
             <div class="flex-1">
-              <p>Full Time: 8</p>
-              <p>Part TIme: 1</p>
+              <p>Full Time: {{ fulltimeInclass }}</p>
+              <p>Part TIme: {{ parttimeInclass }}</p>
             </div>
           </div>
         </div>
@@ -63,5 +63,5 @@
     [member]="member"
   ></app-faculty-box>
 
-  <app-pagination></app-pagination>
+  <app-pagination (params)="getFacultyMembers($event)"></app-pagination>
 </div>

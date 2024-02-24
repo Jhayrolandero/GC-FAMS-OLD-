@@ -7,7 +7,7 @@
       "status": "In-Class",
       "employment": "Part-Time",
       "isVisible": false,
-      "profileIMG": "nami"
+      "profileIMG": "../../../assets/profiles/nami.png"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "soul"
+      "profileIMG": "../../../assets/profiles/soul.png"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "status": "Day-Off",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "robin"
+      "profileIMG": "../../../assets/profiles/robin.png"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "status": "In-Class",
       "employment": "Part-Time",
       "isVisible": false,
-      "profileIMG": "chopper"
+      "profileIMG": "../../../assets/profiles/chopper.png"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "status": "Unavailable",
       "employment": "Part-Time",
       "isVisible": false,
-      "profileIMG": "jinbei"
+      "profileIMG": "../../../assets/profiles/jinbei.png"
     },
     {
       "id": 6,
@@ -52,223 +52,223 @@
       "status": "Unavailable",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/sanji.png"
     },
     {
       "id": 7,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "Asta",
+      "units": 21,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/asta.png"
     },
     {
       "id": 8,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "MaoMao",
+      "units": 20,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/maomao.png"
     },
     {
       "id": 9,
-      "name": "Vinsmoke Sanji",
+      "name": "Jinshi",
       "units": 22,
-      "status": "Unavailable",
+      "status": "Day-Off",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/jinshi.png"
     },
     {
       "id": 10,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
+      "name": "Frieren",
+      "units": 1000,
       "status": "Unavailable",
-      "employment": "Full-Time",
+      "employment": "Part-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/frieren.png"
     },
     {
       "id": 11,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "Fern",
+      "units": 18,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/fern.png"
     },
     {
       "id": 12,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "Stark",
+      "units": 20,
+      "status": "Day-Off",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/stark.png"
     },
     {
       "id": 13,
-      "name": "Vinsmoke Sanji",
+      "name": "Kirito",
       "units": 22,
-      "status": "Unavailable",
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/kirito.png"
     },
     {
       "id": 14,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "Asuna",
+      "units": 18,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/asuna.png"
     },
     {
       "id": 15,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
-      "employment": "Full-Time",
+      "name": "Ains Ooal Gown",
+      "units": 21,
+      "status": "Day-Off",
+      "employment": "Part-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/ains.png"
     },
     {
       "id": 16,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
+      "name": "Albedo",
+      "units": 20,
       "status": "Unavailable",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/albedo.png"
     },
     {
       "id": 17,
-      "name": "Vinsmoke Sanji",
+      "name": "Rimuru Tempest",
       "units": 22,
-      "status": "Unavailable",
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/rimuru.png"
     },
     {
       "id": 18,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
-      "employment": "Full-Time",
+      "name": "Saitama",
+      "units": 18,
+      "status": "Day-Off",
+      "employment": "Part-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/saitama.png"
     },
     {
       "id": 19,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "Genos",
+      "units": 20,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/genos.png"
     },
     {
       "id": 20,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "Naruto Uzumaki",
+      "units": 24,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/naruto.png"
     },
     {
       "id": 21,
-      "name": "Vinsmoke Sanji",
+      "name": "Sasuke Uchiha",
       "units": 22,
       "status": "Unavailable",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/sasuke.png"
     },
     {
       "id": 22,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
+      "name": "Eren Yeager",
+      "units": 20,
       "status": "Unavailable",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/eren.png"
     },
     {
       "id": 23,
-      "name": "Vinsmoke Sanji",
+      "name": "Mikasa Ackerman",
       "units": 22,
-      "status": "Unavailable",
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/mikasa.png"
     },
     {
       "id": 24,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
-      "employment": "Full-Time",
+      "name": "Edward Elric",
+      "units": 20,
+      "status": "Day-Off",
+      "employment": "Part-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/edward.png"
     },
     {
       "id": 25,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
-      "employment": "Full-Time",
+      "name": "Alphonse Elric",
+      "units": 20,
+      "status": "Day-Off",
+      "employment": "Part-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/alphonse.png"
     },
     {
       "id": 26,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "Light Yagami",
+      "units": 23,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/light.png"
     },
     {
       "id": 27,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "L Lawliet",
+      "units": 23,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/l.png"
     },
     {
       "id": 28,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "Ishigami Senku",
+      "units": 24,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/senku.png"
     },
     {
       "id": 29,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
+      "name": "Ayanokoji Kiyotaka",
+      "units": 20,
       "status": "Unavailable",
-      "employment": "Full-Time",
+      "employment": "Part-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/ayanokoji.png"
     },
     {
       "id": 30,
-      "name": "Vinsmoke Sanji",
-      "units": 22,
-      "status": "Unavailable",
+      "name": "Gojo Satoru",
+      "units": 20,
+      "status": "In-Class",
       "employment": "Full-Time",
       "isVisible": false,
-      "profileIMG": "sanji"
+      "profileIMG": "../../../assets/profiles/gojo.png"
     }
   ],
   "FacultyCourse": [

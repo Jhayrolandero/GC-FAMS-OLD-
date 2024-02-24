@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FacultymembersService } from '../../services/admin/facultymembers.service';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 @Component({
@@ -11,11 +11,11 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 })
 export class PaginationComponent implements OnInit {
 
+  @Output() params = new EventEmitter<string>();
+
   firstPage: number = 1
   lastPage: number = 1;
   currPage: number = 1;
-  prev: boolean | number = false;
-  next: boolean | number = false;
   pages: number[] = [];
   constructor(private facultyService: FacultymembersService) {}
 
@@ -29,27 +29,30 @@ export class PaginationComponent implements OnInit {
       (page: any) => {
         this.firstPage = page.first;
         this.lastPage = page.last
-        this.prev = page.prev;
-        this.next = page.next
         for(let i = 1; i<=page.pages; i++) {
           this.pages.push(i);
         }
-
-        console.log(page)
       }
     );
   }
 
   decrementPage(): void {
     this.currPage--;
+    this.renderPage()
   }
-
+  // '_page=1&_per_page=10'
   incrementPage(): void {
     this.currPage++;
+    this.renderPage()
   }
 
   jumpPage(page: number): void {
     // console.log(page)
     this.currPage = page;
+    this.renderPage()
+  }
+
+  renderPage(): void {
+    this.params.emit(`_page=${this.currPage}&_per_page=10`)
   }
 }

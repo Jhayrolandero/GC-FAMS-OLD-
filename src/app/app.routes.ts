@@ -8,6 +8,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 import { AnalyticsComponent } from './faculty/analytics/analytics.component';
 import { ScheduleComponent } from './faculty/schedule/schedule.component';
 export const routes: Routes = [
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'faculty', component: FacultyComponent, children: [
     {path: 'profile', component: AnalyticsComponent},

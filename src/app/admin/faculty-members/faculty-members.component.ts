@@ -4,6 +4,7 @@ import { FacultymembersService } from '../../services/admin/facultymembers.servi
 import { FacultyMember } from '../../services/admin/facultymembers';
 import { NgFor } from '@angular/common';
 import { PaginationComponent } from '../../components/pagination/pagination.component';
+import { facultyMemberResource } from '../../services/admin/facultyMemberResource';
 @Component({
   selector: 'app-faculty-members',
   standalone: true,
@@ -15,15 +16,37 @@ import { PaginationComponent } from '../../components/pagination/pagination.comp
 
 export class FacultyMembersComponent implements OnInit {
 
-  facultyMembers: FacultyMember[] = [];
+  facultyMembers: any = [];
+  fullTime: number = 0;
+  partTime: number = 0;
+  fulltimeInclass: number = 0;
+  parttimeInclass: number = 0;
+  constructor( private facultyService: FacultymembersService ){
 
-  constructor( private facultyService: FacultymembersService ){}
-
-  getFacultyMembers(): void {
-    this.facultyService.getFacultyMembers()
-        .subscribe(facultyMembers => this.facultyMembers = facultyMembers);
   }
+
+  getFacultyMembers(params?: any): void {
+    // console.log(this.facultyService.getURI(params))
+    this.facultyService.getFacultyMembers(params)
+        .subscribe(facultyMembers => {
+          this.facultyMembers = facultyMembers.data
+
+          this.fullTime = 0
+          this.partTime = 0
+          this.fulltimeInclass = 0
+          this.parttimeInclass = 0
+
+          this.facultyMembers.map( (members:any) => {
+            if(members.employment === 'Full-Time') this.fullTime++;
+            else if(members.employment === 'Part-Time') this.partTime++;
+
+            if(members.status === 'In-Class' && members.employment === 'Full-Time') this.fulltimeInclass++
+            else if(members.status === 'In-Class' && members.employment === 'Part-Time') this.parttimeInclass++
+          })
+        });
+  }
+
   ngOnInit(): void {
     this.getFacultyMembers();
-}
+  }
 }

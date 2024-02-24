@@ -1,0 +1,36 @@
+<div class="flex justify-end">
+  <div
+    class="grow-0 bg-white flex flex-row gap-3 place-self-end items-center py-2 px-3 shadow-lg rounded-xl max-w-fit"
+  >
+    <button
+      class="font-bold"
+      *ngIf="currPage > firstPage; else elseBack"
+      (click)="decrementPage()"
+    >
+      Back
+    </button>
+    <ng-template #elseBack>
+      <span>Back</span>
+    </ng-template>
+    <button
+      *ngFor="let page of pages"
+      [ngClass]="{
+        'bg-blue text-white px-2 py-1 rounded-md font-bold shadow-md':
+          page == currPage
+      }"
+      (click)="jumpPage(page)"
+    >
+      {{ page }}
+    </button>
+    <button
+      class="font-bold"
+      *ngIf="currPage < lastPage; else elseNext"
+      (click)="incrementPage()"
+    >
+      Next
+    </button>
+    <ng-template #elseNext>
+      <span>Next</span>
+    </ng-template>
+  </div>
+</div>

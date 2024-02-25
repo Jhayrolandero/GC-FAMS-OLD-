@@ -1,0 +1,10 @@
+<div class="w-full px-5 mt-10">
+    <div *ngFor="let sched of schedules" class="bg-blue h-fit w-full rounded-[25px] flex flex-row my-4 hover:opacity-90 hover:duration-300 duration-300">
+        <div class="bg-white w-[65px] rounded-[25px] m-2"></div>
+        <div class="">
+            <p class="text-white text-[1.7rem] font-Roboto font-extralight">{{ sched.start }} - {{ sched.end}}</p>
+            <p class="text-white text-[2rem] font-Poppins font-semibold">{{  sched.courseID  }}</p>
+            <p class="text-white text-[1.3rem] font-Poppins font-regular">RM 507</p>
+        </div>
+    </div>
+</div>

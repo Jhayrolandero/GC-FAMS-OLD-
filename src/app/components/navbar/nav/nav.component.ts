@@ -18,7 +18,6 @@ export class NavComponent {
   //Initializes url title due to async nature of title for navigation
   ngOnInit(): void {
     this.urlTitle = this.navTitle.replace(" ", "-").toLowerCase();
-    console.log(this.urlTitle);
   }
 
   //Band-aid solution for image switch. Will switch to a less-disgusting SVG solution later.

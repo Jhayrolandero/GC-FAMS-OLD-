@@ -20,33 +20,14 @@
             <button class="month-text">June</button>
         </div>
 
-        <!-- I have sinned below -->
-
-        <div class="w-[92%] flex flex-row justify-between">
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-blue flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">15</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
+        <div class="w-full flex flex-row justify-around px-0 pb-4">
+            <app-schedule-date-circle (click)="changeDateSelected(date)" *ngFor="let date of dates; index as i" [i]="i" [date]="date"></app-schedule-date-circle>
         </div>
+
         
-        <div class="flex flex-row w-full shadow-lg rounded-[25px]">
+        <div class="flex flex-row w-full shadow-lg rounded-[25px] bg-white">
             <div class="w-full">
-                
+                <app-schedule-block [week]="week"></app-schedule-block>
             </div>
     
             <div class="w-[470px] px-[20px] pt-[40px]">
@@ -54,10 +35,11 @@
                 <p class="font-Poppins font-semibold text-[4rem] text-center text-blue p-0 m-0 leading-[4rem]">23</p>
 
                 <p class="font-Poppins font-semibold text-[1.4rem] text-blue mt-4">Consultation Hours</p>
-                <hr>
+                <hr class="h-[3px] bg-mainGray">
                 <!-- Object this one -->
-                <div class="w-full h-[60px] bg-blue rounded-[25px] my-3">
-                    asdfasdfasdf
+                <div class="w-full h-[60px] bg-blue rounded-[25px] my-3 text-center">
+                    <p class="text-white font-Poppins font-semibold">Monday</p>
+                    <p class="text-white text-[1.3rem] font-Poppins font-semibold">10AM - 12PM</p>
                 </div>
                 <div class="w-full h-[60px] bg-blue rounded-[25px] my-3">
                     asdfasdfasdf

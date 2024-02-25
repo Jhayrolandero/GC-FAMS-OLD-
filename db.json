@@ -322,6 +322,13 @@
       "end": "13:00"
     },
     {
+      "facultyID": 1,
+      "courseID": 31321,
+      "day": "Sunday",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    {
       "facultyID": 2,
       "courseID": 696969,
       "day": "Monday",

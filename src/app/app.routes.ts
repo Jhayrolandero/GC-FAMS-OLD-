@@ -8,6 +8,8 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 import { AnalyticsComponent } from './faculty/analytics/analytics.component';
 import { ScheduleComponent } from './faculty/schedule/schedule.component';
 import { CommunityExtensionsComponent } from './faculty/community-extensions/community-extensions.component';
+import { ManageFacultyComponent } from './admin/manage-faculty/manage-faculty.component';
+
 export const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
@@ -29,6 +31,7 @@ export const routes: Routes = [
     {path: 'program-projects', component: ProgramAnalyticsComponent},
     {path: 'community-extensions', component: ProgramAnalyticsComponent},
     {path: 'evaluation-analytics', component: ProgramAnalyticsComponent},
+    {path: 'manage-faculty', component: ManageFacultyComponent}
   ]},
   {path: '**', component: PagenotfoundComponent}
 ];

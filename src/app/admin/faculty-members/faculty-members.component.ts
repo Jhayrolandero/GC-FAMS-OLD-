@@ -1,21 +1,73 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit, ViewChild } from '@angular/core';
 import { FacultyBoxComponent } from '../../components/admin/faculty-members/faculty-box/faculty-box.component';
 import { FacultymembersService } from '../../services/admin/facultymembers.service';
 import { FacultyMember } from '../../services/admin/facultymembers';
 import { NgFor } from '@angular/common';
 import { PaginationComponent } from '../../components/pagination/pagination.component';
 import { facultyMemberResource } from '../../services/admin/facultyMemberResource';
+import { FacultySectionComponent } from './faculty-section/faculty-section.component';
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+
 @Component({
   selector: 'app-faculty-members',
   standalone: true,
-  imports: [FacultyBoxComponent, NgFor, PaginationComponent],
+  imports: [FacultyBoxComponent, NgFor, PaginationComponent, FacultySectionComponent, CanvasJSAngularChartsModule],
   providers: [FacultymembersService],
   templateUrl: './faculty-members.component.html',
   styleUrl: './faculty-members.component.css'
 })
 
 export class FacultyMembersComponent implements OnInit {
+  chartOptions = {
 
+    backgroundColor: 'transparent',
+    indexLabelPlacement: "outside",
+	  animationEnabled: true,
+	  data: [{
+      indexLabel: "{name}",
+		type: "doughnut",
+		yValueFormatString: "#,###.##'%'",
+		dataPoints: [
+		  { y: 50, name: "Part-Time", color: "#FFA500" },
+		  { y: 50, name: "Full-Time" },
+		]
+	  }]
+	}
+  status = {
+
+    backgroundColor: 'transparent',
+    indexLabelPlacement: "outside",
+	  animationEnabled: true,
+	  data: [{
+      indexLabel: "{name}",
+		type: "doughnut",
+		yValueFormatString: "#,###.##'%'",
+		dataPoints: [
+		  { y: 33.33, name: "In-Class", color: "#d2292b" },
+		  { y: 33.33, name: "Day-Off", color: "#24ac64" },
+		  { y: 33.33, name: "Unavailable", color: "#9ca3af" },
+		]
+	  }]
+	}
+  colleges = {
+
+    backgroundColor: 'transparent',
+    indexLabelPlacement: "outside",
+	  animationEnabled: true,
+
+	  data: [{
+      indexLabel: "{name}",
+		type: "doughnut",
+		yValueFormatString: "#,###.##'%'",
+		dataPoints: [
+		  { y: 33.33, name: "CCS", color: "#f79548" },
+		  { y: 33.33, name: "CAHS", color: "#e02424" },
+		  { y: 33.33, name: "CEAS", color: "#074287" },
+		  { y: 33.33, name: "CHTM", color: "#fc8eb0" },
+		  { y: 33.33, name: "CBA", color: "#ffe444" },
+		]
+	  }]
+	}
   facultyMembers: any = [];
   fullTime: number = 0;
   partTime: number = 0;

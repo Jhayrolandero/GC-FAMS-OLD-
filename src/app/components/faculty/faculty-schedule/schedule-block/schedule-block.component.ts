@@ -12,9 +12,10 @@ import { schedule } from '../../../../services/admin/schedule';
   styleUrl: './schedule-block.component.css'
 })
 export class ScheduleBlockComponent {
-  @Input() week!: number;
-
+  @Input() week: number = new Date().getDate();
+  courseName!: string;
   schedules: schedule[] = [];
+  weeks: string[] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
   constructor(private schedule:ScheduleFacultyFetcherService){
     this.getSchedule();
@@ -28,7 +29,6 @@ export class ScheduleBlockComponent {
     //Fetches the schedule data based on passed selected date
     this.schedule.fetchSchedDay(this.week).subscribe((response:schedule[]) => {
       this.schedules = response;
-      console.log(this.schedules);
     });
   }
 }

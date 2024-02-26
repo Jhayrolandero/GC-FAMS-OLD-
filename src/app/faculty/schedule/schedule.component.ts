@@ -12,7 +12,9 @@ import { CommonModule } from '@angular/common';
 })
 export class ScheduleComponent {
   dates: number[] = [];
+  monthsForm: string[] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   currDate = new Date();
+  currMonth: string = this.monthsForm[this.currDate.getMonth()];
   tempDate = new Date();
   week: number = this.currDate.getDay();
 
@@ -24,7 +26,6 @@ export class ScheduleComponent {
     this.currDate.setDate(date);
     this.updateDateArr();
     this.week = this.currDate.getDay();
-    console.log(this.currDate);
   }
 
   //Creates date array list based on currDate

@@ -19,7 +19,7 @@ export class CommunityExtensionsComponent implements OnInit{
   getCommex():void {
     this.commService.getAllCommex().subscribe(
       (commex :any) => {
-        this.commexs = commex
+        this.commexs = commex;
       }
 
     )

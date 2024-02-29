@@ -1,6 +1,13 @@
 export interface schedule {
-  courseID: number;
-  facultyID: number;
+  class_code: number;
+  faculty_ID: number;
+  course_code: string;
+  week:2
   start: string;
   end: string;
+  room: string;
+  block: string;
+  program: string;
+  unit: number;
+  course_name?: string;
 }

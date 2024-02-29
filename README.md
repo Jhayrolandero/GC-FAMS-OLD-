@@ -1,8 +1,8 @@
-# GC-FMS
+# GC-FaMS
 
 <img src="https://github.com/paranoid-android12/GC-FAMS/assets/113983506/0c8cdbbc-c991-4115-a591-7386e855b208" align="right" height="320" width="320">
 
-The Gordon College Faculty Monitoring System (GC-FMS) is a “Faculty Profiling and Development Monitoring'' web-application which provides a centralized system for management, and profiling of faculty members across different programs within the school. This enables a centralized system to consistently monitor the quality and development of multiple areas of programs to be accredited for a higher level of education, which streamlines the entire process of the overall program development.
+The Gordon College Faculty Monitoring System (GC-FaMS) is a “Faculty Profiling and Development Monitoring'' web-application which provides a centralized system for management, and profiling of faculty members across different programs within the school. This enables a centralized system to consistently monitor the quality and development of multiple areas of programs to be accredited for a higher level of education, which streamlines the entire process of the overall program development.
 
 ## Installation:
 For easier experience, use GitHub Desktop for simple push and pull functionalities. (I'll update later with more details for Git users).

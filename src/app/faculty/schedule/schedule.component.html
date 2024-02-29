@@ -5,59 +5,35 @@
         <h1 class="font-Poppins font-semibold text-[2.5rem] py-2">Schedules & Availability</h1>
         <div class="flex flex-row space-x-4">
             <div class=" text-black font-Roboto font-light px-9 py-2 border-[1px] border-solid border-black rounded-full">Day Filter</div>
-            <button class="bg-blue text-white font-Poppins font-semibold px-11 py-2 rounded-full">+Add</button>
+            <button class="bg-gradient-to-r from-blue to-greenBar text-white font-Poppins font-semibold px-11 py-2 rounded-full shadow-xl hover:scale-[102%] hover:duration-300 duration-300">+Add</button>
         </div>
     </div>
 
     <div class="bg-white shadow-lg bg-opacity-70 w-full rounded-[25px] flex justify-center flex-col items-center px-9">
-        <div class="w-full flex flex-row justify-between py-5">
-            <button class="month-text">December</button>
-            <button class="month-text">January</button>
-            <button class="month-text">February</button>
-            <button class="month-text">March</button>
-            <button class="month-text">April</button>
-            <button class="month-text">May</button>
-            <button class="month-text">June</button>
+        <div class="flex flex-row justify-around w-[100%] my-4">
+            <app-schedule-month-scroll (click)="changeMonthSelected(month)" *ngFor="let month of monthsForm" [currMonth]="month" [selectedMonth]="currMonth"></app-schedule-month-scroll>
         </div>
 
-        <!-- I have sinned below -->
-
-        <div class="w-[92%] flex flex-row justify-between">
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-blue flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">15</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
-            <div class="rounded-full w-[60px] h-[60px] bg-slate-300 flex items-center justify-center"><p class="text-center font-Poppins text-white font-semibold text-[32px]">14</p></div>
+        <div class="w-full flex flex-row justify-around px-10 pb-4">
+            <app-schedule-date-circle (click)="changeDateSelected(date)" *ngFor="let date of dates; index as i" [i]="i" [date]="date"></app-schedule-date-circle>
         </div>
+
         
-        <div class="flex flex-row w-full shadow-lg rounded-[25px]">
+        <div class="flex flex-row w-full shadow-lg rounded-[25px] bg-white my-4">
             <div class="w-full">
-                
+                <app-schedule-block [week]="week"></app-schedule-block>
             </div>
     
-            <div class="w-[470px] px-[20px] pt-[40px]">
+            <div class="w-[470px] px-[20px] pt-5">
                 <p class="font-Poppins font-semibold text-[1.7rem] text-center text-black p-0 m-0">Units</p>
                 <p class="font-Poppins font-semibold text-[4rem] text-center text-blue p-0 m-0 leading-[4rem]">23</p>
 
                 <p class="font-Poppins font-semibold text-[1.4rem] text-blue mt-4">Consultation Hours</p>
-                <hr>
+                <hr class="h-[3px] bg-mainGray">
                 <!-- Object this one -->
-                <div class="w-full h-[60px] bg-blue rounded-[25px] my-3">
-                    asdfasdfasdf
+                <div class="w-full h-[60px] bg-blue rounded-[25px] my-3 text-center">
+                    <p class="text-white font-Poppins font-semibold">Monday</p>
+                    <p class="text-white text-[1.3rem] font-Poppins font-semibold">10AM - 12PM</p>
                 </div>
                 <div class="w-full h-[60px] bg-blue rounded-[25px] my-3">
                     asdfasdfasdf

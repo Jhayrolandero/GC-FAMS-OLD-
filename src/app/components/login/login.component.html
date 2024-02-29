@@ -24,48 +24,54 @@
     class="flex mobileS:justify-center tablet:justify-start items-center z-10 mobileS:w-full tablet:w-1/2"
   >
     <div
-      class="bg-blue p-5 rounded-2xl tablet:w-10/12 laptop:w-8/12 max-w-screen-md"
+      class="bg-blue p-5 rounded-[25px] tablet:w-10/12 laptop:w-8/12 max-w-screen-md"
     >
-      <p class="p-5 text-center text-2xl font-semibold">Welcome</p>
+      <p class="p-3 text-center text-2xl  font-Poppins font-semibold">Welcome</p>
 
       <form
-        action=""
-        class="flex flex-col justify-center items-center bg-white2 p-7 rounded-lg gap-5"
+        (ngSubmit)="onLogin()"
+        [formGroup]="loginForm"
+        class="flex flex-col justify-center items-center bg-white2 p-7 rounded-[25px] gap-5"
       >
         <input type="checkbox" id="switch" class="hidden peer" />
 
         <label
           for="switch"
-          class="relative w w-8/12 py-4 bg-white rounded-full after:py-1 after:absolute after:w-1/2 after:h-full after:rounded-full after:bg-blue after:top-0 after:left-0 after:transition-all after:duration-150 after:content-['Dean'] after:text-center after:font-bold peer-checked:after:left-1/2 peer-checked:after:content-['Faculty']"
+          class="relative w w-8/12 py-4 bg-white rounded-[25px] after:py-1 after:absolute after:w-1/2 after:h-full after:rounded-full after:bg-blue after:top-0 after:left-0 after:transition-all after:duration-150 after:content-['Dean'] after:text-center after:font-bold peer-checked:after:left-1/2 peer-checked:after:content-['Faculty']"
         >
           <span
-            class="absolute top-0 inset-x-1/2 right-0 text-blue text-center font-bold py-1"
+            class="select-none absolute top-0 inset-x-1/2 right-0 text-blue text-center font-bold py-1"
             >Faculty</span
           >
 
           <span
-            class="absolute top-0 inset-x-1/2 left-0 text-blue text-center font-bold py-1"
+            class="select-none absolute top-0 inset-x-1/2 left-0 text-blue text-center font-bold py-1"
             >Dean</span
           >
         </label>
-        <input
-          type="text"
-          placeholder="Username"
-          class="px-5 py-2 rounded-sm text-blue w-full shadow-lg"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          class="px-5 py-2 rounded-sm text-blue w-full shadow-lg"
-        />
-        <a href="" class="text-end text-blue justify-self-end"
-          >Forgot Password?</a
-        >
-        <input
-          type="submit"
-          value="Login"
-          class="bg-blue rounded-full py-2 px-20 max-w-min"
-        />
+
+          <input
+            type="text"
+            placeholder="Email"
+            id="email"
+            formControlName="email"
+            class="px-5 py-2 rounded-md text-blue w-full shadow-lg"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            formControlName="password"
+            class="px-5 py-2 rounded-md text-blue w-full shadow-lg"
+          />
+          <a href="" class="text-end text-blue justify-self-end"
+            >Forgot Password?</a
+          >
+          <input
+            type="submit"
+            value="Login"
+            class="bg-blue rounded-full py-2 px-20 max-w-min"
+          />
       </form>
     </div>
   </div>

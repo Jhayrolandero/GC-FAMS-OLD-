@@ -1,24 +1,25 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { ScheduleBlockComponent } from '../../components/faculty/faculty-schedule/schedule-block/schedule-block.component';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { schedule } from '../admin/schedule';
+import { AuthService } from '../auth.service';
+import { RequestOptions } from 'https';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ScheduleFacultyFetcherService {
-  url ='http://localhost:8080/GC-FaMS/API/';
+  url ='http://localhost:8080/GC-FaMS-API/API/';
+  // tokenVal = document.cookie;
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private auth: AuthService) { }
 
   fetchAll(){
     return this.http.get<schedule[]>(this.url);
   }
 
   fetchSchedDay(week: number){
-    // console.log(this.url + "/?facultyID=1&day=" + this.tempweek);
-  
-    return this.http.get<schedule[]>(this.url + "getschedules/" + "1/" + week);
+    let took = new HttpHeaders().set("Authorization", "Bearer " + this.auth.getToken());
+    return this.http.get<schedule[]>(this.url + "getschedules/" + "1/" + week, {headers:took});
   }
 }
